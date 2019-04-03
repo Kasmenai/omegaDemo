@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Омега</title>
+	<link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js" async></script>
+</head>
+
+<body class="page">
+  <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+  </div>
+  <div class="page__inner">
+    <header class="header page__header">
+      <nav class="header__nav">
+        <button class="header__toggle header__toggle--menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#">Доставка</a></li>
+          <li class="header__item"><a class="header__link" href="/">Реквизиты</a></li>
+          <li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
+        </ul>
+      </nav>
+      <div class="header__phone">
+        <a class="header__link header__link--morespacing" href="tel:+74993808340">+7 (499) 380-83-40</a>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <section class="about page__about">
+        <div class="about__pic">
+          <picture>
+            <source media="(max-width:880px)" srcset="img/paragraph-tablet.png">
+            <img src="img/paragraph-desktop.png" alt="Параграф">
+          </picture>
+        </div>
+        <div class="description about__description">
+          <div class="description__company">
+            <h1 class="description__title">Омега</h1>
+            <div class="description__subtitle">Юридические, бухгалтерские <br> и адвокатские услуги в Дагестане</div>
+          </div>
+          <div class="description__work">
+            Три направления нашей работы: юридические, бухгалтерские и адвокатские услуги.
+          </div>
+          <div class="description__example">
+            Например, мы ведем бухгалтерский учет, чтобы вы не тратились на специалиста в штат. Ликвидируем компании, в том числе и с задолженностями, представляем наших клиентов в суде.
+          </div>
+          <div class="description__ask">
+            <span class="description__phone"></span>
+            <a href="#" class="description__btn">Узнать цены</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services page__services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <div class="services__inner">
+          <div class="services__item">
+              <svg class="services__icon" width="75" height="85">
+                <use xlink:href="#sprite-calc"></use>
+              </svg>
+            <h2 class="services__tittle"><span class="services__intro-text">Бухгалтерия</span></h2>
+            <p class="services__description">Бухгалтерское споровождение, бюджетным учереждениям, расчет зароботной платы, восстановление бухгалтерского учета, нулевая отчетность, постановка бухгалтерского учета</p>
+          </div>
+          <div class="services__item">
+            <svg class="services__icon" width="90" height="88">
+              <use xlink:href="#sprite-legalservice"></use>
+            </svg>
+            <h2 class="services__tittle"><span class="services__intro-text">Адвокатская практика</span></h2>
+            <p class="services__description">Налоговые споры, арбитражные споры, гражданско-правовые споры, претензионная и исковая работа, взыскание дебиторской задолженности</p>
+          </div>
+          <div class="services__item">
+            <svg class="services__icon" width="91" height="83">
+              <use xlink:href="#sprite-lawyer"></use>
+            </svg>
+            <h2 class="services__tittle"><span class="services__intro-text">Юридические услуги</span></h2>
+            <p class="services__description">Банкротство, ликвидация и регистрация фирм, юр. сопровождение, сделки с недвижимостью, готовые фирмы, реорганазация, регистрация изменения</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tariffs page__tariffs">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariffs__inner">
+          <div class="tariffs__item">
+            <p class="tariffs__title">Стартовый</p>
+            <p class="tariffs__price">8000 р/мес</p>
+            <p class="tariffs__text">Подойдет для ИП</p>
+            <ul class="tariffs__list">
+              <li> - до 30 документов</li>
+              <li> - 1 сотрудник</li>
+            </ul>
+            <a class="tariffs__link" href="#">Выбрать</a>
+          </div>
+          <div class="tariffs__item">
+            <p class="tariffs__title">Улучшенный</p>
+            <p class="tariffs__price">12500 р/мес</p>
+            <p class="tariffs__text">Подойдет для ИП</p>
+            <ul class="tariffs__list">
+              <li> - до 30 документов</li>
+              <li> - 1 сотрудник</li>
+            </ul>
+            <a class="tariffs__link" href="#">Выбрать</a>
+          </div>
+          <div class="tariffs__item">
+            <p class="tariffs__title tariffs__title--active">Полный</p>
+            <p class="tariffs__price">36000 р/мес</p>
+            <p class="tariffs__text">Подойдет для ИП</p>
+            <ul class="tariffs__list">
+              <li> - до 30 документов</li>
+              <li> - 1 сотрудник</li>
+            </ul>
+            <a class="tariffs__link" href="#">Выбрать</a>
+          </div>
+          <div class="tariffs__item">
+            <p class="tariffs__title">Эксклюзивный</p>
+            <p class="tariffs__price">43000 р/мес</p>
+            <p class="tariffs__text">Подойдет для ИП</p>
+            <ul class="tariffs__list">
+              <li> - до 30 документов</li>
+              <li> - 1 сотрудник</li>
+            </ul>
+            <a class="tariffs__link" href="#">Выбрать</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="callback page__callback">
+        <h2 class="callback__title">Оставьте заявку, мы перезвоним в течение получаса</h2>
+        <form class="callback__form" action="">
+          <div class="callback__item">
+            <label class="visually-hidden" for="field-name">Имя</label>
+            <input class="field field--cb" type="text" id="field-name" placeholder="Ваше имя">
+          </div>
+          <div class="callback__item">
+            <label class="visually-hidden" for="field-phone">Телефон</label>
+            <input class="field field--cb" type="text" id="field-phone" placeholder="Телефон" required>
+          </div>
+          <div class="callback__item">
+            <input class="button button--submit" type="submit" value="Перезвонить" class="submit">
+          </div>
+        </form>
+      </section>
+
+      <section class="info page__contacts">
+        <div class="info__description">
+          <picture>
+            <source media="(max-width:480px)" srcset="img/man-mobile.png">
+            <img class="info__image" src="img/man-desktop.png" alt="Юрист">
+          </picture>
+          <p class="info__quote">Никто не любит иметь дело с госорганами. И не обязательно. Государство, как велосипед, сначала нужно научиться, а потом будет легче. Мы долго учились, наладили процессы, теперь мы помогаем нашим клиентами решать юридические вопросы быстрее и спокойнее.</p>
+        </div>
+        <div class="info__address">
+          <p class="info__title">Данные для связи</p>
+          <p class="info__contact">г. Махачкала, <br>ул. Шамиля 8б</p>
+          <p class="info__subtitle">Звоните с 8 до 20</p>
+          <p class="info__contact info__contact--tel">8 925 075-82-81</p>
+          <p class="info__subtitle">Для консультаций по WhatsApp</p>
+          <p class="info__contact info__contact--tel">8 925 075-82-81</p>
+          <div class="info__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.8641678038352!2d47.47028321547608!3d42.98113487915001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404ea0358c50c5b1%3A0xa56ec64c43f16a6b!2z0L_RgC4g0JjQvNCw0LzQsCDQqNCw0LzQuNC70Y8sIDgsINCc0LDRhdCw0YfQutCw0LvQsCwg0KDQtdGB0L8uINCU0LDQs9C10YHRgtCw0L0sIDM2NzAwOA!5e0!3m2!1sru!2sru!4v1509613689239" width="100%" height="100%" frameborder="0" style="border-radius:20px" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="advantages page__advantages">
+        <div class="context">
+          <h2 class="context__title">Почему наши клиенты выбрали нас.</h2>
+          <p class="context__description">Бухгалтерское сопровождение, бюджетным учереждениям, расчет зароботной платы,<br> восстановление бухгалтерского учета, нулевая отчетность, постановка бухгалтерского учета</p>
+        </div>
+        <div class="advantage">
+          <svg class="advantage__icon" width="80" height="80">
+            <use xlink:href="#sprite-circle"></use>
+          </svg>
+          <p class="advantage__description">Ведение проекта с 0, полный цикл (адвокаты, директора управляющие и др.)</p>
+        </div>
+        <div class="advantage">
+          <svg class="advantage__icon" width="114" height="80">
+            <use xlink:href="#sprite-close"></use>
+          </svg>
+          <p class="advantage__description">Комплексное сопровождение процедуры банкротства</p>
+        </div>
+        <div class="advantage">
+          <svg class="advantage__icon" width="90" height="90">
+            <use xlink:href="#sprite-control"></use>
+          </svg>
+          <p class="advantage__description">100% контроль над проектом</p>
+        </div>
+        <div class="advantage">
+          <svg class="advantage__icon" width="138" height="87">
+            <use xlink:href="#sprite-docs"></use>
+          </svg>
+          <p class="advantage__description">Большой практический опыт решения сложных банкротств</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page__footer">
+      <div class="footer__text">
+        <p class="footer__name">Омега</p>
+        <p class="footer__description" >Юридические, бухгалтерские <br> и адвокатские услуги</p>
+      </div>
+      <div class="footer__logo">
+        <picture>
+          <source media="(max-width:880px)" srcset="img/omega-tablet.png">
+          <img class="footer__img" src="img/omega-desktop.png" alt="Омега">
+        </picture>
+      </div>
+      <div class="footer__text">
+        <a class="footer__phone" href="tel:+74993808340">+7 (499) 380-83-40</a>
+        <p class="footer__schedule">C 9 до 20 по будням</p>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="js/common.min.js"></script>
+</html>

@@ -1,0 +1,39 @@
+.callback {
+  &__form {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .callback__form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .callback__item {
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  .callback__item:last-child {
+    margin-bottom: 0;
+  }
+}

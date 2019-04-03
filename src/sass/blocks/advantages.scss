@@ -1,0 +1,17 @@
+.advantages {
+  display: grid;
+  grid-template-columns: 46.8% 1fr 1fr;
+  margin-bottom: 60px;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages {
+    display: block;
+  }
+}

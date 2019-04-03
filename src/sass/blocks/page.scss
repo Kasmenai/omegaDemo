@@ -1,0 +1,89 @@
+.page {
+  &__inner {
+    max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__header {
+    position: relative;
+    padding-top: 55px;
+    padding-bottom: 40px;
+    width: 44%;
+    margin-left: auto;
+    z-index: 1;
+  }
+
+  &__about {
+    margin-bottom: 160px;
+  }
+
+  &__services {
+    margin-bottom: 60px;
+  }
+
+  &__tariffs {
+    margin-bottom: 85px;
+  }
+
+  &__callback {
+    margin-bottom: 160px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  &__contacts {
+    margin-bottom: 154px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page--menuOpened {
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(darken($bg-color, 20%), 0.8);
+      z-index: 1;
+    }
+  }
+
+  .page__about {
+    margin-bottom: 60px;
+  }
+
+  .page__inner {
+    max-width: 600px;
+  }
+
+  .page__header {
+    width: 100%;
+    z-index: 2;
+  }
+
+  .page__callback {
+    margin-bottom: 60px;
+  }
+
+  .page__contacts {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page__inner {
+    max-width: 320px;
+  }
+
+  .page__callback {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

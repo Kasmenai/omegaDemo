@@ -1,0 +1,94 @@
+.description {
+  &__company {
+    margin-bottom: 105px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 34.5px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 3px;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  &__work {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 25px;
+    word-break: break-word;
+  }
+
+  &__example {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__ask {
+    position: relative;
+  }
+
+  &__phone {
+    position: absolute;
+    left: -93px;
+    width: 62px;
+    height: 62px;
+    display: block;
+    background-color: $btn-main-color;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 28px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $secondary-color;
+    background-color: $btn-main-color;
+    border: 2px solid $btn-main-color;
+    transition: background-color 0.2s linear;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $btn-main-color;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .description__ask {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description__phone {
+    position: static;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .description__company {
+    margin-bottom: 30px;
+  }
+
+  .description__btn {
+    padding: 0 18px;
+  }
+}

@@ -1,0 +1,51 @@
+.services {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 33%;
+    padding: 0 45px 0;
+    box-sizing: border-box;
+  }
+
+  &__tittle {
+    margin-top: 33px;
+    margin-bottom: 15px;
+  }
+
+  &__intro-text {
+    font-size: 17px;
+    line-height: 1;
+    border-bottom: 1px solid;
+  }
+
+  &__icon {
+    margin-left: 30px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services__item {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services__item {
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .services__tittle {
+    margin-top: 10px;
+  }
+}

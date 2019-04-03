@@ -1,0 +1,25 @@
+.field {
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: bold;
+
+  &:focus {
+    outline: 2px solid $btn-secondary-color;
+  }
+
+  &--cb {
+    border: none;
+    border-bottom: 3px solid $border-main-color;
+
+    &::placeholder {
+      color: $btn-secondary-color;
+      letter-spacing: 1px;
+    }
+  }
+}

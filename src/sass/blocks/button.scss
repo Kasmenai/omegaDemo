@@ -1,0 +1,18 @@
+.button {
+  padding: 12px 20px;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: 0.6px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: $btn-secondary-color;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #98c1d0;
+    background-color: darken($btn-secondary-color, 10%);
+  }
+}

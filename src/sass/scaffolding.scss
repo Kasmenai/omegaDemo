@@ -1,0 +1,37 @@
+body {
+  min-width: 320px;
+  font-family: 'Circe', sans-serif;
+  font-weight: bold;
+  color: $main-color;
+  background-color: $bg-color;
+  // background-image: repeating-linear-gradient(-27.5deg,transparent,transparent 73.7%,rgba(215,224,227,.3) 73.7%,rgba(215,224,227,.3) 86.7%);
+  background-image:
+    repeating-linear-gradient(
+    -27.5deg,
+    transparent,
+    transparent 73.7%,
+    rgba(darken(saturate($bg-color, 4.31), 7.45), 0.3) 73.7%,
+    rgba(darken(saturate($bg-color, 4.31), 7.45), 0.3)  86.7%
+    );
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
