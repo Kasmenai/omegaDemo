@@ -1,4 +1,4 @@
-# Demo page «Омега»
+# Demo page «Омега» [![Build Status](https://travis-ci.org/Kasmenai/omegaDemo.svg?branch=master)](https://travis-ci.org/Kasmenai/omegaDemo)
 
 ### Работа с проектом:
 
